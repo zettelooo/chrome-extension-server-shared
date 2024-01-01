@@ -1,1 +1,1 @@
-export * from './WebMessage'
+export * from './Model'
