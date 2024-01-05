@@ -15,6 +15,7 @@
     "build": "zettel-bt validate && rimraf dist && tsc",
     "prepublishOnly": "npm run build",
     "preversion": "zettel-bt preversion",
+    "version": "zettel-bt catch-version ./src/version.ts @@VERSION-LINE@@",
     "postversion": "zettel-bt postversion",
     "prepare": "husky install",
     "test": "echo \"No test yet.\""

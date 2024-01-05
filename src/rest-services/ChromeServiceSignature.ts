@@ -1,7 +1,7 @@
 import { Id } from '@zettelooo/commons'
 import { Model } from '../Model'
 
-export namespace MainServiceSignature {
+export namespace ChromeServiceSignature {
   export namespace GetPages {
     export const path = 'get-pages'
     export interface Request {}
