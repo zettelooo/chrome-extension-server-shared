@@ -1,10 +1,13 @@
 import { Type } from '../Type'
-import { User } from './User'
 
-export interface Account extends Omit<User, 'type'> {
+export interface Account {
   readonly type: Type.Account
-  readonly isOnboarded: boolean
   readonly subscription: Account.Subscription
+  readonly name: string
+  readonly userName: string
+  readonly email: string
+  readonly avatarFileUrl: string | null
+  readonly color: string
 }
 
 export namespace Account {
